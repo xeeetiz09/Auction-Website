@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+}
+
+.login-body {
+    font-family: 'Poppins', 'sans-serif';
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('images/reg_log/log.jpg') no-repeat center;
+    background-size: cover;
+    animation: animate_background 10s linear infinite;
+}
+
+@keyframes animate_background {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.form_login {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    width: 410px;
+    border-radius: 20px;
+}
+
+#login{
+    height: 460px;
+}
+
+#register{
+    margin: 15px 0;
+    height: 540px;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+}
+
+.cred_input {
+    position: relative;
+    width: 300px;
+    border-bottom: 2px solid #fff;
+    margin: 30px 0;
+}
+
+.cred_input label {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    pointer-events: none;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    transition: .2s;
+}
+
+
+.cred_input input {
+    height: 50px;
+    width: 100%;
+    outline: none;
+    background: transparent;
+    font-size: 1em;
+    color: #fff;
+    padding: 0px 35px 0px 5px;
+    border: none;
+}
+
+.cred_input .form_icon {
+    position: absolute;
+    right: 8px;
+    color: white;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.show-password, .hide-password{
+    cursor: pointer;
+}
+
+.forget_pass {
+    display: flex;
+    justify-content: end;
+    margin: -15px 0 15px;
+    font-size: 0.9em;
+}
+
+.forget_pass a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.forget_pass a:hover {
+    text-decoration: underline;
+}
+
+.home_pg {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.home_pg a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.home_pg a:hover {
+    text-decoration: underline;
+}
+
+button {
+    font-weight: 500;
+    height: 40px;
+    width: 100%;
+    border-radius: 40px;
+    color: #000;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.reg_link {
+    text-align: center;
+    margin: 25px 0 10px;
+    font-size: 0.9em;
+    color: white;
+}
+
+.reg_link p a {
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+.reg_link p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 360px) {
+    .form_login{
+        height: 100vh;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+    }
+
+    .cred_input{
+        width: 280px;
+    }
+}

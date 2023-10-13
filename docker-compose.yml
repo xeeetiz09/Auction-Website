@@ -1,0 +1,64 @@
+version: '3.8'
+services:
+    updatecerts:
+        image: vjedev/certupdater:latest
+        volumes:
+            - certs:/certs
+            - mysqlconf:/mysqlconf
+    landingpage:
+        image: vjedev/landingpage:latest
+        volumes:
+            - ./websites:/websites
+    web:
+        image: nginx:latest
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - ./nginx.conf:/etc/nginx/conf.d/nginx.conf
+            - certs:/certs
+            - ./websites:/websites
+        depends_on:
+            - updatecerts
+    php:
+        build:
+            context: .
+            dockerfile: PHP.Dockerfile
+        volumes:
+            - ./websites:/websites
+    db:
+        image: mysql
+        volumes:
+        - .:/docker-entrypoint-initdb.d
+        environment:
+            MYSQL_ROOT_PASSWORD: password
+            MYSQL_DATABASE: cars
+            MYSQL_USER: student
+            MYSQL_PASSWORD: student
+    adminer:
+        image: adminer
+        restart: always
+        ports:
+            - 8080:8080
+
+    phpunit:
+        image: phpunit/phpunit:latest
+        working_dir: /websites/default
+        volumes:
+            - ./websites:/websites
+        profiles:
+            - phpunit
+    composer:
+        image: composer:latest
+        working_dir: /websites/default
+        volumes:
+            - ./websites:/websites
+        profiles:
+            - composer
+    maildev:
+        image: maildev/maildev:latest
+
+volumes:
+    mysqldata: {}
+    certs: {}
+    mysqlconf: {}

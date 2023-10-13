@@ -1,0 +1,384 @@
+@import url('https://stockfont.org/?f0fc17fc2c73bb853047701f2da049f096e95b6ce10aacb41a664ac54da70ff2');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Oxygen-Regular', verdana, sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+header {
+    background-color: #0b3557;
+    color: white;
+    height: 100px;
+}
+
+header img {
+    width: 200px;
+    background-color: white;
+    margin: 20px;
+}
+
+header section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: auto;
+}
+
+body > img {
+    display: block;
+    width: 100%;
+}
+
+nav ul {
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+    overflow: auto;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    padding-top: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+header h1 {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 4em;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 2px 2px 2px #000;
+}
+
+main {
+    min-height: 75vh;
+    background-color: #fff;
+    width: 85vw;
+    display: block;
+    margin: auto;
+    box-shadow: 0px 0px 10px #888;
+    color: #444;
+}
+
+footer {
+    min-height: 5vh;
+}
+
+main h2 {
+    font-size: 2em;
+}
+
+.home {
+    padding: 5vw;
+    width: 60vw;
+    min-height: 100vh;
+}
+
+p,
+li,
+h2 {
+    margin-bottom: 1em;
+}
+
+ol {
+    margin-left: 30px;
+}
+
+pre {
+    margin-top: 20px;
+}
+
+code {
+    background-color: #ccc;
+}
+
+pre code {
+    display: block;
+}
+
+footer {
+    background-color: #004225;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+form select,
+form label,
+form input,
+form textarea {
+    float: left;
+    width: 200px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+form label {
+    clear: left;
+}
+
+textarea {
+    height: 250px;
+    resize: none;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="datetime-local"],
+form input[type="password"],
+form input[type="date"],
+textarea {
+    color: rgb(21, 20, 20);
+    font-family: verdana, sans-serif;
+    width: 50%;
+    outline: none;
+}
+
+input[type="submit"] {
+    clear: both;
+    margin-left: 220px;
+    width: 220px;
+}
+
+.left ul {
+    list-style-type: none;
+    width: 180px;
+}
+
+section a {
+    color: #444;
+}
+
+form select {
+    width: 53.5%;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+td {
+    padding: 8px;
+    border-bottom: 1px solid #333;
+    text-align: center;
+}
+
+.jobs {
+    list-style-type: none;
+}
+
+.jobs strong {
+    width: 150px;
+    float: left;
+    clear: left;
+}
+
+.jobs p {
+    width: 500px;
+    float: left;
+}
+
+.jobs li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #aaa;
+    overflow: auto;
+}
+
+.jobs a {
+    float: right;
+    clear: both;
+}
+
+img.shop {
+    width: 800px;
+}
+
+.stock,
+.admin {
+    display: table;
+}
+
+.stock > ul,
+.admin .left {
+    width: 15vw;
+    list-style-type: none;
+    display: table-cell;
+    padding: 10px;
+    background-color: #555;
+    margin: 0;
+}
+
+.stock > ul,
+.admin .left ul li {
+    padding: 10px;
+}
+
+.stock .products,
+.admin .right {
+    display: table-cell;
+    padding: 20px;
+}
+
+.stock > ul a,
+.admin .left a {
+    color: white;
+    text-decoration: none;
+}
+
+table td input[type="submit"] {
+    margin: 0;
+    float: right;
+    width: auto;
+    padding: auto;
+}
+
+.items ul {
+    margin-top: 40px;
+    list-style-type: none;
+}
+
+.items li {
+    border-top: 2px solid #888;
+    padding: 20px;
+    overflow: auto;
+}
+
+.items li .noimage,
+.items li img {
+    margin-top: 20px;
+    width: 190px;
+    margin-right: 4%;
+    height: 190px;
+    float: left;
+}
+
+.items .info {
+    float: left;
+    width: 75%;
+}
+
+.current {
+    background-color: #ddd;
+    color: #333;
+    display: block;
+}
+
+.stock > ul .current a {
+    color: #333;
+}
+
+.categories li {
+    margin: 0;
+    padding: 0.5em;
+    font-size: 2em;
+}
+
+.products > img {
+    max-height: 300px;
+}
+
+a:hover {
+    color: #0af891 !important;
+}
+
+.right {
+    padding: 20px;
+}
+
+main h1 {
+    color: #004225;
+    font-size: 50px;
+}
+
+main img {
+    display: block;
+}
+
+#all_enquiry,
+#all_context {
+    margin: 20px;
+    padding: 30px;
+    background-color: rgba(170, 170, 170, 0.233);
+}
+
+#enquiry_field,
+#story_field {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#date {
+    float: right;
+    font-size: 14px;
+}
+
+#username {
+    font-size: 19px;
+}
+
+#username label {
+    font-size: 13px;
+}
+
+#enquiry {
+    font-size: 16px;
+}
+
+#dealt {
+    text-align: right;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#dealt a {
+    padding: 20px;
+    background-color: rgba(136, 136, 136, 0.402);
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+#dealt a:hover {
+    color: black;
+    background-color: darkslategray;
+}
+
+#addImg {
+    font-size: 40px;
+    font-weight: bolder;
+    width: 20px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.highlight {
+    background-color: yellow;
+}

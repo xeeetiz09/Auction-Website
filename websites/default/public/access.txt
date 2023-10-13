@@ -1,0 +1,15 @@
+Steps involved in running the system
+Open Docker App
+Open the code in IDE (VS Code, PHPStorm, etc.) terminal, write 'docker compose up'
+Wait for some time (approx. 10 - 15 seconds)
+After that enter 'v.je' in web browser search bar and hit enter
+Thats all
+
+Login Credentials:
+Admin Login:
+    Email: rameshparajuli@gmail.com
+    Password: Admin
+
+User Login:
+    Email: fahuser@hotmail.com
+    Password: user

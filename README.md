@@ -12,7 +12,7 @@ To run the project, follow these steps:<br>
 Login Credentials:<br>
 Admin Login:<br>
     Email: rameshparajuli@gmail.com<br>
-    Password: Admin<br>
+    Password: admin<br>
 <br><br>
 User Login:<br>
     Email: fahuser@hotmail.com<br>
